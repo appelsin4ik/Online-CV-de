@@ -7,6 +7,53 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Intro overlay -->
+  <div id="intro-overlay" class="intro-overlay">
+    <div class="intro-modal reveal">
+      <h2 class="intro-title">Move the cards 🧩</h2>
+      <p class="intro-text">
+        Zieh einzelne Karten heraus und ordne sie so an, wie du willst.
+      </p>
+
+      <div class="intro-layout">
+        <!-- Header like CV -->
+        <div class="intro-row intro-row-main">
+          <div class="intro-header-left">
+            <div class="intro-chip-mini"></div>
+            <div class="intro-line-mini"></div>
+            <div class="intro-line-mini intro-line-short"></div>
+          </div>
+          <div class="intro-header-right">
+            <div class="intro-avatar-mini"></div>
+          </div>
+        </div>
+
+        <!-- Two card rows -->
+        <div class="intro-row intro-grid-row">
+          <div class="intro-col">
+            <div class="intro-card-mini intro-card-tall"></div>
+            <div class="intro-card-mini"></div>
+          </div>
+          <div class="intro-col">
+            <div class="intro-card-mini"></div>
+            <div class="intro-card-mini intro-card-highlight"></div>
+            <div class="intro-card-mini"></div>
+          </div>
+        </div>
+      </div>
+
+      <p class="intro-hint">
+        Alles wieder zurück? Nutze
+        <span class="intro-chip">⟲ Return layout</span>.
+      </p>
+
+      <button id="intro-ok-btn" type="button" class="intro-ok-btn">
+        OK, los geht’s ✨
+      </button>
+    </div>
+
+  </div>
   <div class="bg-orbit"></div>
   <div class="bg-orbit bg-orbit--2"></div>
 
@@ -24,9 +71,14 @@
             Erfahrung mit Java, Go, Node.js, JavaScript, Tailwind und modernen Webtechnologien.<br><br>
           </p>
             <div class="chip">
-            <span class="status-dot"></span>
-            <span>Status: Student (HTW Dresden)</span>
+              <span class="status-dot"></span>
+              <span>Status: Student (HTW Dresden)</span>
             </div>
+
+            <button class="layout-reset-btn" type="button">
+              ⟲ Return layout
+            </button>
+
         </div>
       </div>
     </header>
