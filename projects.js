@@ -59,30 +59,6 @@ window.CV_PROJECTS = [
   ]
 },
 {
-  "id": "bahnnexttime",
-  "name": "BahnNextTime",
-  "type": "HOCHSCHULPROJEKT",
-  "description": "Teamprojekt zur Weiterentwicklung einer bestehenden Webanwendung. Zusammenarbeit an Frontend, Backend und Projektdokumentation mit Git.",
-  "tech": [
-    "Python",
-    "JavaScript",
-    "Git"
-  ],
-  "link": "https://github.com/lxrxsxphxx/BahnPlanNext",
-  "linkLabel": "GitHub-Repository",
-  "note": "",
-  "images": [
-    {
-      "src": "assets/projects/bahnnexttime/01-overview.webp",
-      "label": "Startansicht"
-    },
-    {
-      "src": "assets/projects/bahnnexttime/02-planning.webp",
-      "label": "Planungsansicht"
-    }
-  ]
-},
-{
   "id": "vocabulary",
   "name": "Vocabulary Trainer",
   "type": "HOCHSCHULPROJEKT",
@@ -127,6 +103,26 @@ window.CV_PROJECTS = [
     {
       "src": "assets/projects/calendar/02-calendar-light.webp",
       "label": "Light Mode"
+    }
+  ]
+},
+{
+  "id": "bahnnexttime",
+  "name": "BahnNextTime",
+  "type": "HOCHSCHULPROJEKT",
+  "description": "Teamprojekt zur Weiterentwicklung einer bestehenden Webanwendung. Zusammenarbeit an Frontend, Backend und Projektdokumentation mit Git.",
+  "tech": [
+    "Python",
+    "JavaScript",
+    "Git"
+  ],
+  "link": "https://github.com/lxrxsxphxx/BahnPlanNext",
+  "linkLabel": "GitHub-Repository",
+  "note": "",
+  "images": [
+    {
+      "src": "assets/projects/bahnnexttime/01-planning.png",
+      "label": "Startansicht"
     }
   ]
 },
