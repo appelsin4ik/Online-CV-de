@@ -1,281 +1,237 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <title>Kyrylo Kozhemiakin – Developer CV</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101720">
+  <meta name="description" content="Kyrylo Kozhemiakin – Medieninformatikstudent aus Dresden mit Erfahrung in der Softwareentwicklung bei CHECK24, Prozessdigitalisierung und eigenen Webprojekten.">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Kyrylo Kozhemiakin – Softwareentwicklung & Lebenslauf">
+  <meta property="og:description" content="Berufserfahrung, ausgewählte Projekte und Technologien – kompakt auf einer Seite.">
+  <title>Kyrylo Kozhemiakin | Softwareentwicklung & Lebenslauf</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="projects.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
-
-  <!-- Intro overlay -->
-  <div id="intro-overlay" class="intro-overlay">
-    <div class="intro-modal reveal">
-      <h2 class="intro-title">Move the cards 🧩</h2>
-      <p class="intro-text">
-        Zieh einzelne Karten heraus und ordne sie so an, wie du willst.
-      </p>
-
-      <div class="intro-layout">
-        <!-- Header like CV -->
-        <div class="intro-row intro-row-main">
-          <div class="intro-header-left">
-            <div class="intro-chip-mini"></div>
-            <div class="intro-line-mini"></div>
-            <div class="intro-line-mini intro-line-short"></div>
-          </div>
-          <div class="intro-header-right">
-            <div class="intro-avatar-mini"></div>
-          </div>
-        </div>
-
-        <!-- Two card rows -->
-        <div class="intro-row intro-grid-row">
-          <div class="intro-col">
-            <div class="intro-card-mini intro-card-tall"></div>
-            <div class="intro-card-mini"></div>
-          </div>
-          <div class="intro-col">
-            <div class="intro-card-mini"></div>
-            <div class="intro-card-mini intro-card-highlight"></div>
-            <div class="intro-card-mini"></div>
-          </div>
-        </div>
-      </div>
-
-      <p class="intro-hint">
-        Alles wieder zurück? Nutze
-        <span class="intro-chip">⟲ Return layout</span>.
-      </p>
-
-      <button id="intro-ok-btn" type="button" class="intro-ok-btn">
-        OK, los geht’s ✨
-      </button>
-    </div>
-
-  </div>
-  <div class="bg-orbit"></div>
-  <div class="bg-orbit bg-orbit--2"></div>
-
-  <div class="page">
-    <header class="reveal">
-      <div class="header-main">
-        <div class="avatar-wrapper">
-          <img src="avatar.jpg" alt="Portrait von Kirill Kozhemiakin">
-        </div>
-
-        <div class="name-block">
-          <h1>Kyrylo Kozhemiakin</h1>
-          <p class="tagline">
-            Student der Medieninformatik (HTW Dresden), Fokus auf Backend- &amp; Webentwicklung.<br>
-            Erfahrung mit Java, Go, Node.js, JavaScript, Tailwind und modernen Webtechnologien.<br><br>
-          </p>
-            <div class="chip">
-              <span class="status-dot"></span>
-              <span>Status: Student (HTW Dresden)</span>
-            </div>
-
-            <button class="layout-reset-btn" type="button">
-              ⟲ Return layout
-            </button>
-
-        </div>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+  <div class="shell" id="oben">
+    <header class="site-header">
+      <a class="brand" href="#oben" aria-label="Kyrylo Kozhemiakin – zum Seitenanfang">
+        <span class="brand-mark">KK<span>.</span></span>
+        <span class="brand-descriptor">Lebenslauf <span class="brand-separator">/</span> Softwareentwicklung</span>
+      </a>
+      <nav class="site-nav" aria-label="Hauptnavigation">
+        <a href="#erfahrung">Erfahrung</a>
+        <a href="#kenntnisse">Kenntnisse</a>
+        <a href="#projekte">Projekte</a>
+        <a href="#bildung">Bildung</a>
+      </nav>
+      <div class="header-tools">
+        <a class="header-contact" href="mailto:kozhemiakin.kirill@gmail.com">Kontakt <span aria-hidden="true">↗</span></a>
+        <button id="theme-button" class="theme-button" type="button" title="Farbschema ändern" aria-label="Helles Design aktivieren" aria-pressed="false">
+          <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7.2 7.2 0 0 1-9-9Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
       </div>
     </header>
 
-    <main class="layout">
-      <section aria-label="Main content">
-        <article class="card card--primary reveal">
-        <h2>Profil</h2>
-
-        <p class="text">
-            Ich studiere Medieninformatik an der HTW Dresden und arbeite neben dem Studium aktiv an eigenen Projekten –
-            vom Browser-Game bis zu Java-Desktop-Apps und Mods für Minecraft.
-        </p>
-
-        <p class="text" style="margin-top: 6px;">
-            Mir sind saubere Backend-Architekturen, verständlicher Code und kleine, gut durchdachte Produkte wichtig,
-            die Menschen wirklich benutzen.
-        </p>
-
-        <div class="pill-row">
-            <div class="pill">🧠 <strong>Backend</strong> · Java · Go · Node.js</div>
-            <div class="pill">🌐 <strong>Web</strong> · JavaScript · HTML · CSS</div>
-            <div class="pill">🤝 Teamarbeit · HTW &amp; eigene Projekte</div>
+    <main id="inhalt">
+      <section class="hero" aria-labelledby="name">
+        <div class="hero-copy">
+          <p class="kicker"><span class="kicker-line" aria-hidden="true"></span> SOFTWAREENTWICKLUNG <span class="kicker-sep">/</span> DRESDEN</p>
+          <h1 id="name">Kyrylo<br><span>Kozhemiakin</span><span class="name-dot">.</span></h1>
+          <p class="hero-role">Medieninformatik (B.Sc.) <span aria-hidden="true">·</span> HTW Dresden</p>
+          <p class="hero-lead">Ich entwickle Webanwendungen und Software-Tools mit Fokus auf Backend und saubere Lösungen. Praxiserfahrung habe ich bei CHECK24 und in der Digitalisierung einer Privatklinik gesammelt.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projekte">Projekte ansehen <span aria-hidden="true">↓</span></a>
+            <a class="btn btn-secondary" href="https://github.com/appelsin4ik" target="_blank" rel="noopener noreferrer">GitHub ansehen <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-tech" aria-label="Technologische Schwerpunkte">
+            <span class="hero-tech-label">Schwerpunkte</span>
+            <span>Java</span><span>Go</span><span>TypeScript</span><span>Node.js</span><span>NestJS</span>
+          </div>
         </div>
-        </article>
-
-        <article class="card card--accent reveal">
-          <h2>Projekte</h2>
-
-          <div class="project">
-            <div class="project-title">
-              <h3>🎮 Mellstroy Run – Browser-Runner-Game</h3>
-              <span class="project-meta">JS · Node.js · MongoDB · Canvas</span>
-            </div>
-            <p class="text">
-              Endless-Runner mit Slot-Mechanik, Shop-System und Backend-Anbindung. Entwicklung der
-              Gameplay-Logik, Slot-System, Serverarchitektur und Persistenz (Scores, Skins, Coins).
-            </p>
-            <div class="tech-list">
-              Rolle: Fullstack-Entwicklung, Game-Gameplay, Backend-API.
-            </div>
-            <a class="project-link" href="https://github.com/appelsin4ik/Mellstroy-Run-Info-" target="_blank" rel="noreferrer">
-              <span>GitHub</span>
-              <span class="project-link-arrow">&gt;</span>
-            </a>
+        <aside class="identity-card" aria-label="Persönliche Angaben">
+          <div class="portrait-wrap"><img src="assets/portrait.jpg" alt="Porträt von Kyrylo Kozhemiakin" width="259" height="346" loading="eager"></div>
+          <div class="identity-info">
+            <div><span>Wohnort</span><strong>Dresden, Deutschland</strong></div>
+            <div><span>Studium</span><strong>7. Semester</strong></div>
+            <div><span>Schwerpunkt</span><strong>Backend &amp; Web</strong></div>
           </div>
-
-          <div class="project">
-            <div class="project-title">
-              <h3>🧩 Vocabulary Trainer – Desktop-App</h3>
-              <span class="project-meta">Java · Swing · JSON</span>
-            </div>
-            <p class="text">
-              Anwendung zur Verwaltung von Vokabeln mit JSON-basierter Datenspeicherung
-              und intuitiver Oberfläche. Design und Funktionalität nahezu vollständig umgesetzt.
-            </p>
-            <div class="tech-list">
-              Rolle: Konzeption, UI/UX, Persistenz &amp; Logik.
-            </div>
-            <a class="project-link" href="https://github.com/appelsin4ik/-UNI-PROJECT-Vocabulary-Trainer" target="_blank" rel="noreferrer">
-              <span>GitHub</span>
-              <span class="project-link-arrow">&gt;</span>
-            </a>
-          </div>
-
-          <div class="project">
-            <div class="project-title">
-              <h3>📅 Kalender – Web-App</h3>
-              <span class="project-meta">HTML · CSS · JavaScript</span>
-            </div>
-            <p class="text">
-              Voll funktionsfähiger Kalender mit Jahresauswahl, Berechnung von Feiertagen und
-              Dark/Light Mode. Fokus auf saubere UI und einfache Interaktion.
-            </p>
-            <a class="project-link" href="https://github.com/appelsin4ik/-UNI-PROJECT-Calendar-PWA" target="_blank" rel="noreferrer">
-              <span>GitHub</span>
-              <span class="project-link-arrow">&gt;</span>
-            </a>
-          </div>
-
-          <div class="project">
-            <div class="project-title">
-              <h3>⛏️ Minecraft Mod – Inventory Sorting</h3>
-              <span class="project-meta">Java · Algorithmen</span>
-            </div>
-            <p class="text">
-              Minecraft-Mod zur Sortierung von Inventaren mit verschiedenen Sortieralgorithmen.
-              Praktisches Tool und Spielwiese für Algorithmik in Java.
-            </p>
-            <a class="project-link" href="https://github.com/appelsin4ik/Forge-InventorySorterMod-1.21.4" target="_blank" rel="noreferrer">
-              <span>GitHub</span>
-              <span class="project-link-arrow">&gt;</span>
-            </a>
-          </div>
-
-          <div class="project">
-            <div class="project-title">
-              <h3>🧪 BahnNextTime – HTW-Teamprojekt</h3>
-              <span class="project-meta">Python · JavaScript · Git</span>
-            </div>
-            <p class="text">
-              Modernisierung eines bestehenden Uni-Projekts mit einem größeren Team.
-              Klare Aufteilung in Backend/Frontend, strukturierte Zusammenarbeit und
-              Einsatz moderner Webtechnologien.
-            </p>
-            <a class="project-link" href="https://github.com/lxrxsxphxx/BahnPlanNext" target="_blank" rel="noreferrer">
-              <span>GitHub</span>
-              <span class="project-link-arrow">&gt;</span>
-            </a>
-          </div>
-        </article>
+        </aside>
       </section>
 
-      <aside aria-label="Sidebar">
-        <section class="card card--soft reveal">
-          <h2>Skills – Level (1–5)</h2>
-          <div class="pill-row">
-            <div class="pill"><strong>Java</strong> · 4/5</div>
-            <div class="pill"><strong>Go</strong> · 3/5</div>
-            <div class="pill"><strong>JavaScript</strong> · 4/5</div>
-            <div class="pill"><strong>Node.js</strong> · 3/5</div>
-            <div class="pill"><strong>SQL / MongoDB</strong> · 4/5</div>
-            <div class="pill"><strong>C++</strong> · 3/5</div>
-            <div class="pill"><strong>PHP</strong> · 1/5</div>
-          </div>
-        </section>
-
-        <section class="card card--ghost reveal">
-        <h2>Erfahrung</h2>
-
-        <div class="exp-item">
-            <div class="exp-header">
-            <h3>Werkstudent Softwareentwicklung – Check24</h3>
-            <span class="exp-meta">01/2025 – 08/2025</span>
-            </div>
-            <div class="exp-role">Go-Entwicklung · Optimierung · Wartung</div>
-            <ul>
-            <li>Entwicklung und Optimierung von Backend-Services in Go.</li>
-            <li>Fehleranalyse und Performance-Verbesserungen.</li>
-            <li>Mitarbeit an internen Tools und APIs.</li>
-            </ul>
-        </div>
-
-        <div class="exp-item">
-            <div class="exp-header">
-            <h3>Eigene Projekte &amp; Teamarbeit</h3>
-            <span class="exp-meta">seit 2024</span>
-            </div>
-            <div class="exp-role">Indie-Developer · 2er-Team</div>
-            <ul>
-            <li>Konzeption und Umsetzung eigener Projekte (z.&nbsp;B. Mellstroy Run).</li>
-            <li>Aufgabenaufteilung, Git-Workflow und gemeinsame Entwicklung.</li>
-            </ul>
-        </div>
-        </section>
-
-
-
-        <section class="card card--soft reveal">
-          <h2>Ausbildung</h2>
-          <p><strong>HTW Dresden</strong><br>
-            Medieninformatik (B.Sc.), 5. Semester
-          </p>
-          <p class="small">
-            Schwerpunkte: Softwareentwicklung, Webtechnologien, Backend-Design, Datenbanken.
-          </p>
-        </section>
-
-        <section class="card card--ghost reveal">
-          <h2>Mehr über mich</h2>
-          <p class="small">
-            Ich experimentiere gerne mit neuen Technologien, kleinen Games, Tools und
-            Produktideen. In meiner Freizeit bastle ich an Mods, Web-Apps und
-            lerne neue Sprachen und Frameworks.<br><br><br>
-          </p>
-          <a data-btn href="https://github.com/appelsin4ik" target="_blank" rel="noreferrer">
-            🌐 Zum GitHub-Profil
-          </a>
-        </section>
-      </aside>
-    </main>
-
-    <footer class="site-footer">
-      <div class="footer-contact">
-        <span>📍 Dresden</span>
-        <span>·</span>
-        <a href="mailto:kozhemiakin.kirill@gmail.com">kozhemiakin.kirill@gmail.com</a>
-        <span>·</span>
-        <a href="https://github.com/appelsin4ik" target="_blank" rel="noreferrer">github.com/appelsin4ik</a>
+      <div class="overview" aria-label="Kurzüberblick">
+        <div><span class="overview-icon" aria-hidden="true">↗</span><span><b>Praxis</b><small>CHECK24 · ÄSTHETIK IN DRESDEN</small></span></div>
+        <div><span class="overview-icon" aria-hidden="true">⌘</span><span><b>Entwicklung</b><small>Backend · Web · Automatisierung</small></span></div>
+        <div><span class="overview-icon" aria-hidden="true">◎</span><span><b>Sprachen</b><small>Deutsch C1 · Englisch B2 · weitere</small></span></div>
       </div>
 
-      <p class="footer-note">
-        Diese Seite dient als interaktiver Lebenslauf. Eine klassische PDF-Version kann auf Wunsch zugesendet werden.
-      </p>
-    </footer>
-  </div>
+      <div class="main-grid">
+        <section id="erfahrung" class="panel experience-panel" aria-labelledby="erfahrung-titel">
+          <div class="section-heading"><span class="section-number">01</span><div><span class="section-kicker">Werdegang</span><h2 id="erfahrung-titel">Berufserfahrung</h2></div></div>
+          <div class="experience-entry">
+            <div class="entry-meta"><time datetime="2026-07">07/2026</time><span aria-hidden="true">–</span><time datetime="2026-10">10/2026</time></div>
+            <div class="entry-copy"><h3>Werkstudent · KI-gestützte Prozessdigitalisierung</h3><p class="entry-org">ÄSTHETIK IN DRESDEN</p>
+              <ul><li>Patientenumfrage und statistische Auswertung digitalisiert.</li><li>KI-gestützte Dokumentationen und Präsentationen überarbeitet.</li><li>Bei der Integration von KI-Prozessen im Klinikalltag unterstützt.</li></ul>
+            </div>
+          </div>
+          <div class="experience-entry">
+            <div class="entry-meta"><time datetime="2025-01">01/2025</time><span aria-hidden="true">–</span><time datetime="2025-07">07/2025</time></div>
+            <div class="entry-copy"><h3>Werkstudent Softwareentwicklung</h3><p class="entry-org">CHECK24 Reise Tech Hub GmbH</p>
+              <ul><li>Interne Konvertierungs-Tools entwickelt und erweitert.</li><li>Manuelle und automatisierte Softwaretests durchgeführt.</li><li>Technische Dokumentation für interne Nutzer erstellt.</li></ul>
+            </div>
+          </div>
+          <div class="other-work">
+            <h3>Weitere Berufspraxis</h3>
+            <div><time datetime="2024-07">07/2024 – 12/2024</time><span><strong>NEXT Time</strong> · Servicekraft</span></div>
+            <div><time datetime="2023-07">07/2023 – 09/2023</time><span><strong>Rettungsschwimmer</strong> · Badeaufsicht</span></div>
+          </div>
+          <p class="certificate-note">Arbeitszeugnisse von CHECK24 und ÄSTHETIK IN DRESDEN liegen vor und sind auf Anfrage erhältlich.</p>
+        </section>
 
-  <script src="main.js"></script>
+        <aside class="side-column">
+          <section id="kenntnisse" class="panel skills-panel" aria-labelledby="kenntnisse-titel">
+            <div class="section-heading compact"><span class="section-number">02</span><div><span class="section-kicker">Mein Werkzeugkasten</span><h2 id="kenntnisse-titel">Kenntnisse</h2></div></div>
+            <div class="skill-group"><h3>Schwerpunkt</h3><div class="skill-tags"><span class="skill-primary">Java</span><span class="skill-primary">Go</span><span class="skill-primary">JavaScript</span><span class="skill-primary">TypeScript</span><span class="skill-primary">Node.js</span><span class="skill-primary">NestJS</span><span class="skill-primary">Next.js</span></div></div>
+            <div class="skill-group"><h3>Web &amp; Frameworks</h3><p>Express · HTML · CSS · Tailwind CSS · Socket.IO</p></div>
+            <div class="skill-group"><h3>Datenbanken &amp; Tools</h3><p>SQL · MySQL · MongoDB · Prisma · Git · Docker · Linux</p></div>
+            <div class="skill-group"><h3>Weitere Kenntnisse</h3><p>Python · C · C++ · C# / .NET · PHP · Bash · Kubernetes</p></div>
+          </section>
+          <section id="sprachen" class="panel languages-panel" aria-labelledby="sprachen-titel">
+            <div class="section-heading compact"><span class="section-number">03</span><div><span class="section-kicker">Kommunikation</span><h2 id="sprachen-titel">Sprachen</h2></div></div>
+            <div class="language-list">
+              <div><strong>Deutsch</strong><span>C1</span></div>
+              <div><strong>Russisch</strong><span>Muttersprache</span></div>
+              <div><strong>Ukrainisch</strong><span>C1</span></div>
+              <div><strong>Englisch</strong><span>B2 · Schulniveau</span></div>
+              <div><strong>Französisch</strong><span>B2 · Schulniveau</span></div>
+            </div>
+          </section>
+        </aside>
+      </div>
+
+      <section id="projekte" class="section projects-section" aria-labelledby="projekte-titel">
+        <div class="section-heading"><span class="section-number">04</span><div><span class="section-kicker">Aus der Praxis</span><h2 id="projekte-titel">Ausgewählte Projekte</h2></div></div>
+        <div class="projects-controls">
+  <p class="projects-hint">Sechs Projekte – von Kundenarbeit bis zu eigenen Anwendungen. Wähle ein Projekt für Bilder und Details.</p>
+  <div class="projects-navigation" aria-label="Projekte durchblättern">
+    <span class="projects-counter" id="projects-counter" aria-live="polite">01 / 06</span>
+    <button class="projects-arrow" id="projects-prev" type="button" aria-label="Vorheriges Projekt" disabled>←</button>
+    <button class="projects-arrow" id="projects-next" type="button" aria-label="Nächstes Projekt">→</button>
+  </div>
+</div>
+<div class="project-slider" id="project-slider" tabindex="0" role="region" aria-roledescription="Projektkarussell" aria-label="Projekte – horizontal scrollen">
+<article class="project-card project-slide project-slide--featured" data-project="monetizer">
+    <div class="project-top"><span class="project-type">KUNDENPROJEKT</span><span class="project-index">01 / 06</span></div>
+    <h3>Monetizer Game</h3>
+    <p class="project-teaser">Webplattform für Teilnehmerregistrierung, Codeprüfung und Echtzeitkommunikation.</p>
+    <div class="project-stack"><span>Next.js</span><span>NestJS</span><span>Prisma</span><span>Socket.IO</span></div>
+    <button type="button" class="project-card-cta" aria-haspopup="dialog" aria-label="Monetizer Game: Projekt und Bilder ansehen">Projekt &amp; Bilder ansehen <span aria-hidden="true">↗</span></button>
+</article>
+<article class="project-card project-slide project-slide--featured" data-project="mellstroy">
+    <div class="project-top"><span class="project-type">FULLSTACK / GAME</span><span class="project-index">02 / 06</span></div>
+    <h3>Mellstroy Run</h3>
+    <p class="project-teaser">Browser-Game mit Gameplay-Logik, Shop-System und Speicherung von Spielständen.</p>
+    <div class="project-stack"><span>JavaScript</span><span>Canvas</span><span>Node.js</span><span>MongoDB</span></div>
+    <button type="button" class="project-card-cta" aria-haspopup="dialog" aria-label="Mellstroy Run: Projekt und Bilder ansehen">Projekt &amp; Bilder ansehen <span aria-hidden="true">↗</span></button>
+</article>
+<article class="project-card project-slide project-slide--featured" data-project="bahnnexttime">
+    <div class="project-top"><span class="project-type">HOCHSCHULPROJEKT</span><span class="project-index">03 / 06</span></div>
+    <h3>BahnNextTime</h3>
+    <p class="project-teaser">Weiterentwicklung einer Webanwendung im Team mit getrennten Frontend- und Backend-Aufgaben.</p>
+    <div class="project-stack"><span>Python</span><span>JavaScript</span><span>Git</span></div>
+    <button type="button" class="project-card-cta" aria-haspopup="dialog" aria-label="BahnNextTime: Projekt und Bilder ansehen">Projekt &amp; Bilder ansehen <span aria-hidden="true">↗</span></button>
+</article>
+<article class="project-card project-slide project-slide--additional" data-project="vocabulary">
+    <div class="project-top"><span class="project-type">HOCHSCHULPROJEKT</span><span class="project-index">04 / 06</span></div>
+    <h3>Vocabulary Trainer</h3>
+    <p class="project-teaser">Java-Desktop-App zum Verwalten und Üben von Vokabeln.</p>
+    <div class="project-stack"><span>Java</span><span>Gradle</span><span>GUI</span></div>
+    <button type="button" class="project-card-cta" aria-haspopup="dialog" aria-label="Vocabulary Trainer: Projekt und Bilder ansehen">Projekt &amp; Bilder ansehen <span aria-hidden="true">↗</span></button>
+</article>
+<article class="project-card project-slide project-slide--additional" data-project="calendar">
+    <div class="project-top"><span class="project-type">HOCHSCHULPROJEKT</span><span class="project-index">05 / 06</span></div>
+    <h3>Calendar PWA</h3>
+    <p class="project-teaser">Web-Kalender mit Feiertagen, Offline-Unterstützung und Dark Mode.</p>
+    <div class="project-stack"><span>JavaScript</span><span>PWA</span><span>Service Worker</span></div>
+    <button type="button" class="project-card-cta" aria-haspopup="dialog" aria-label="Calendar PWA: Projekt und Bilder ansehen">Projekt &amp; Bilder ansehen <span aria-hidden="true">↗</span></button>
+</article>
+<article class="project-card project-slide project-slide--additional" data-project="minecraft">
+    <div class="project-top"><span class="project-type">EIGENES PROJEKT</span><span class="project-index">06 / 06</span></div>
+    <h3>Minecraft Inventory Sorter</h3>
+    <p class="project-teaser">Minecraft-Mod zur Inventarsortierung mit mehreren Algorithmen.</p>
+    <div class="project-stack"><span>Java</span><span>Minecraft Forge</span><span>Algorithmen</span></div>
+    <button type="button" class="project-card-cta" aria-haspopup="dialog" aria-label="Minecraft Inventory Sorter: Projekt und Bilder ansehen">Projekt &amp; Bilder ansehen <span aria-hidden="true">↗</span></button>
+</article>
+</div>
+<p class="project-swipe-hint">Auf dem Smartphone seitlich wischen <span aria-hidden="true">→</span></p>
+
+</section>
+
+<section id="bildung" class="section education-section" aria-labelledby="bildung-titel">
+        <div class="section-heading"><span class="section-number">05</span><div><span class="section-kicker">Mein Hintergrund</span><h2 id="bildung-titel">Bildung &amp; Interessen</h2></div></div>
+        <div class="education-grid">
+          <div class="education-list">
+            <div><time datetime="2023-10">10/2023 – heute</time><span><strong>HTW Dresden</strong><small>Medieninformatik (B.Sc.) · 7. Semester</small></span></div>
+            <div><time datetime="2017-01">01/2017 – 06/2023</time><span><strong>Ulrich-von-Hutten-Gymnasium</strong><small>Schlüchtern · Abitur</small></span></div>
+          </div>
+          <div class="interests"><h3>Interessen</h3><p>Eigene Softwareprojekte, Basketball, Volleyball und Schwimmen (DLRG Silber).</p></div>
+        </div>
+      </section>
+
+      <section id="kontakt" class="contact-section" aria-labelledby="kontakt-titel">
+        <div><span class="section-kicker">Kontakt</span><h2 id="kontakt-titel">Interesse an einem Gespräch?</h2><p>Ich freue mich über Nachrichten zu Softwareprojekten oder einer Zusammenarbeit.</p></div>
+        <div class="contact-actions"><a class="btn btn-primary" href="mailto:kozhemiakin.kirill@gmail.com">E-Mail schreiben <span aria-hidden="true">↗</span></a><a class="contact-inline" href="https://github.com/appelsin4ik" target="_blank" rel="noopener noreferrer">github.com/appelsin4ik ↗</a></div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>© <span id="year">2026</span> Kyrylo Kozhemiakin · Dresden</span><a href="#oben">Zurück nach oben ↑</a></footer>
+  </div>
+  <dialog id="project-dialog" class="project-dialog" aria-labelledby="modal-project-name" aria-describedby="modal-project-description">
+    <div class="project-dialog-inner">
+      <div class="modal-topbar">
+        <span class="modal-eyebrow" id="modal-project-type">PROJEKT</span>
+        <button type="button" class="modal-close" id="modal-close" aria-label="Projektfenster schließen">Schließen <span aria-hidden="true">×</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-gallery">
+          <div class="modal-image-frame">
+            <button class="modal-image-preview" type="button" id="modal-image-enlarge" aria-label="Bild groß anzeigen" title="Bild vergrößern">
+              <img id="modal-image" alt="Projektvorschau" src="data:," width="1280" height="800">
+              <span class="modal-enlarge-hint" aria-hidden="true"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H3v5M16 3h5v5M3 16v5h5M21 16v5h-5"/></svg> Vergrößern</span>
+            </button>
+            <button class="modal-image-arrow modal-image-prev" type="button" id="image-prev" aria-label="Vorheriges Bild">←</button>
+            <button class="modal-image-arrow modal-image-next" type="button" id="image-next" aria-label="Nächstes Bild">→</button>
+          </div>
+          <div class="modal-image-bottom"><span id="modal-image-label">Projektansicht</span><span id="modal-image-count" aria-live="polite">01 / 03</span></div>
+          <div class="modal-thumbnails" id="modal-thumbnails" aria-label="Projektbilder auswählen"></div>
+        </div>
+        <div class="modal-info">
+          <h2 id="modal-project-name"></h2>
+          <p id="modal-project-description"></p>
+          <div class="modal-tech" id="modal-project-tech"></div>
+          <div class="modal-link-holder" id="modal-project-link"></div>
+          <p class="modal-note" id="modal-project-note"></p>
+        </div>
+      </div>
+    </div>
+  </dialog>
+  <!-- Second dialog stays on top of project details and enlarges the selected screenshot. -->
+  <dialog id="image-lightbox" class="image-lightbox" aria-label="Vergrößerte Projektansicht" aria-describedby="lightbox-caption">
+    <div class="lightbox-header">
+      <span id="lightbox-title" class="lightbox-title"></span>
+      <button id="lightbox-close" type="button" class="lightbox-close" aria-label="Vergrößerte Ansicht schließen">Schließen <span aria-hidden="true">×</span></button>
+    </div>
+    <div class="lightbox-stage">
+      <button type="button" id="lightbox-prev" class="lightbox-arrow lightbox-prev" aria-label="Vorheriges Bild">←</button>
+      <img id="lightbox-image" alt="" width="1280" height="800">
+      <button type="button" id="lightbox-next" class="lightbox-arrow lightbox-next" aria-label="Nächstes Bild">→</button>
+    </div>
+    <div class="lightbox-footer">
+      <span id="lightbox-caption"></span>
+      <span id="lightbox-counter" aria-live="polite"></span>
+    </div>
+  </dialog>
 </body>
 </html>
